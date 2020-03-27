@@ -1,12 +1,9 @@
 // connection.js
-const mongoose = require("mongoose");
-const User = require("./models/User.model");
+const mongoose = require('mongoose');
 const config = require('./db');
 
 const connection = config.DB;
 
-const connectDb = () => {
-  return mongoose.connect(connection);
-};
+const connectDb = () => mongoose.connect(connection);
 
 module.exports = connectDb;
